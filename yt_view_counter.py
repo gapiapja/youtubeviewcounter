@@ -66,7 +66,7 @@ def main():
                 response = request.execute()
                 
                 print("Worked!" + str(count));
-                sleep(475);
+                sleep(30);
             count += 1;
             
             
