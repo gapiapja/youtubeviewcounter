@@ -16,7 +16,7 @@ def main():
     api_service_name = "youtube"
     api_version = "v3"
 
-    client_secrets_file = "PUT_YOUR_AUTH_FILE_HERE.json"
+    client_secrets_file = "client_secret.json"
 
     youtube = [];
     # Get credentials and create an API client
@@ -35,7 +35,7 @@ def main():
         try:
             request = youtube[curr_api].videos().list(
                 part="snippet,statistics",
-                id="X4xtZv5nFIk"
+                id="0Q0DjbXPIsg"
             )
             response = request.execute()
 
