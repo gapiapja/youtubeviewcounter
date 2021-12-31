@@ -35,7 +35,7 @@ def main():
         try:
             request = youtube[curr_api].videos().list(
                 part="snippet,statistics",
-                id="0Q0DjbXPIsg"
+                id="uSBSd9WK90M"
             )
             response = request.execute()
 
@@ -59,7 +59,7 @@ def main():
                 request = youtube[curr_api].videos().update(
                     part="snippet",
                     body={
-                        "id": "X4xtZv5nFIk",
+                        "id": "uSBSd9WK90M",
                         "snippet": vid_snippet
                     }
                 )
