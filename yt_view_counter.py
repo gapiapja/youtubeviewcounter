@@ -35,7 +35,7 @@ def main():
         try:
             request = youtube[curr_api].videos().list(
                 part="snippet,statistics",
-                id="uSBSd9WK90M"
+                id="0Q0DjbXPIsg"
             )
             response = request.execute()
 
@@ -53,13 +53,13 @@ def main():
             change = (views not in title);
 
             if(change):
-                title_upd = "Video ini punya " + format(int(views), ",d") + " Penonton, Explained";
+                title_upd = "Video ini punya " + format(int(views), ",d") + " Penonton";
                 vid_snippet["title"] = title_upd;
 
                 request = youtube[curr_api].videos().update(
                     part="snippet",
                     body={
-                        "id": "uSBSd9WK90M",
+                        "id": "0Q0DjbXPIsg",
                         "snippet": vid_snippet
                     }
                 )
