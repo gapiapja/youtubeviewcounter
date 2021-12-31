@@ -53,7 +53,7 @@ def main():
             change = (views not in title);
 
             if(change):
-                title_upd = "How This Video Has " + format(int(views), ",d") + " Views, Explained";
+                title_upd = "Video ini punya " + format(int(views), ",d") + " Penonton, Explained";
                 vid_snippet["title"] = title_upd;
 
                 request = youtube[curr_api].videos().update(
